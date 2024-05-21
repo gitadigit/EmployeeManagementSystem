@@ -1,0 +1,11 @@
+C:\Users\USER\Downloads\EmployeeManagement\System.Core\bin\Debug\net6.0\System.Core.deps.json
+C:\Users\USER\Downloads\EmployeeManagement\System.Core\bin\Debug\net6.0\System.Core.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.Core\bin\Debug\net6.0\System.Core.pdb
+C:\Users\USER\Downloads\EmployeeManagement\System.Core\obj\Debug\net6.0\System.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Downloads\EmployeeManagement\System.Core\obj\Debug\net6.0\System.Core.AssemblyInfoInputs.cache
+C:\Users\USER\Downloads\EmployeeManagement\System.Core\obj\Debug\net6.0\System.Core.AssemblyInfo.cs
+C:\Users\USER\Downloads\EmployeeManagement\System.Core\obj\Debug\net6.0\System.Core.csproj.CoreCompileInputs.cache
+C:\Users\USER\Downloads\EmployeeManagement\System.Core\obj\Debug\net6.0\System.Core.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.Core\obj\Debug\net6.0\refint\System.Core.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.Core\obj\Debug\net6.0\System.Core.pdb
+C:\Users\USER\Downloads\EmployeeManagement\System.Core\obj\Debug\net6.0\ref\System.Core.dll

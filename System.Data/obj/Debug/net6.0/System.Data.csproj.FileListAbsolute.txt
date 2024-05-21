@@ -1,0 +1,14 @@
+C:\Users\USER\Downloads\EmployeeManagement\System.Data\bin\Debug\net6.0\System.Data.deps.json
+C:\Users\USER\Downloads\EmployeeManagement\System.Data\bin\Debug\net6.0\System.Data.runtimeconfig.json
+C:\Users\USER\Downloads\EmployeeManagement\System.Data\bin\Debug\net6.0\System.Data.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.Data\bin\Debug\net6.0\System.Data.pdb
+C:\Users\USER\Downloads\EmployeeManagement\System.Data\obj\Debug\net6.0\System.Data.csproj.AssemblyReference.cache
+C:\Users\USER\Downloads\EmployeeManagement\System.Data\obj\Debug\net6.0\System.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Downloads\EmployeeManagement\System.Data\obj\Debug\net6.0\System.Data.AssemblyInfoInputs.cache
+C:\Users\USER\Downloads\EmployeeManagement\System.Data\obj\Debug\net6.0\System.Data.AssemblyInfo.cs
+C:\Users\USER\Downloads\EmployeeManagement\System.Data\obj\Debug\net6.0\System.Data.csproj.CoreCompileInputs.cache
+C:\Users\USER\Downloads\EmployeeManagement\System.Data\obj\Debug\net6.0\System.Data.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.Data\obj\Debug\net6.0\refint\System.Data.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.Data\obj\Debug\net6.0\System.Data.pdb
+C:\Users\USER\Downloads\EmployeeManagement\System.Data\obj\Debug\net6.0\System.Data.genruntimeconfig.cache
+C:\Users\USER\Downloads\EmployeeManagement\System.Data\obj\Debug\net6.0\ref\System.Data.dll

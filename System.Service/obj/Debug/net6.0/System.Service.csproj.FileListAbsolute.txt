@@ -1,0 +1,11 @@
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\bin\Debug\net6.0\System.Service.deps.json
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\bin\Debug\net6.0\System.Service.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\bin\Debug\net6.0\System.Service.pdb
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\System.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\System.Service.AssemblyInfoInputs.cache
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\System.Service.AssemblyInfo.cs
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\System.Service.csproj.CoreCompileInputs.cache
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\System.Service.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\refint\System.Service.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\System.Service.pdb
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\ref\System.Service.dll

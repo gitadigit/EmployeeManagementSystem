@@ -1,0 +1,17 @@
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\bin\Debug\net6.0\Solid.Service.deps.json
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\bin\Debug\net6.0\Solid.Service.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\bin\Debug\net6.0\Solid.Service.pdb
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\bin\Debug\net6.0\Solid.Core.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\bin\Debug\net6.0\Solid.Data.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\bin\Debug\net6.0\Solid.Data.pdb
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\bin\Debug\net6.0\Solid.Core.pdb
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\Solid.Service.csproj.AssemblyReference.cache
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\Solid.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\Solid.Service.AssemblyInfoInputs.cache
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\Solid.Service.AssemblyInfo.cs
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\Solid.Service.csproj.CoreCompileInputs.cache
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\Solid.Service.csproj.CopyComplete
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\Solid.Service.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\refint\Solid.Service.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\Solid.Service.pdb
+C:\Users\USER\Downloads\EmployeeManagement\System.Service\obj\Debug\net6.0\ref\Solid.Service.dll
