@@ -9,7 +9,7 @@ using Solid.Core.Services;
 
 namespace Solid.Service
 {
-    public class EmployeeService: IEmployeeService
+    public class EmployeeService : IEmployeeService
     {
         private readonly IEmployeeRepository _employeeRepository;
 
@@ -28,19 +28,20 @@ namespace Solid.Service
             return _employeeRepository.GetEmployeeById(id);
         }
 
-        public Employee AddEmployee(Employee employee)
+        public async Task<Employee> AddEmployeeAsync(Employee employee)
         {
-            return _employeeRepository.AddEmployee(employee);
+            return await _employeeRepository.AddEmployeeAsync(employee);
         }
 
-        public Employee UpdaateEmployee(int id, Employee employee)
+        public async Task<Employee> UpdaateEmployeeAsync(int id, Employee employee)
         {
-            return _employeeRepository.UpdaateEmployee(id, employee);
+            return await _employeeRepository.UpdateEmployeeAsync(id, employee);
         }
 
-        public void DeleteEmployee(int id)
+        public async Task<Employee> DeleteEmployeeAsync(int id)
         {
-            _employeeRepository.DeleteEmployee(id);
+           return await _employeeRepository.DeleteEmployeeAsync(id);
         }
+
     }
 }

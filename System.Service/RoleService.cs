@@ -28,19 +28,18 @@ namespace Solid.Service
             return _roleRepository.GetRoleById(id);
         }
 
-        public Role AddRole(Role role)
+        public  async Task<Role> AddRoleAsync(Role role)
         {
-           return _roleRepository.AddRole(role);
+           return await _roleRepository.AddRoleAsync(role);
+        }
+        public async Task<Role> UpdateRoleAsync(int id, Role role)
+        {
+            return await _roleRepository.UpdateRoleAsync(id, role);
         }
 
-        public Role UpdateRole(int id, Role role)
+        public async Task<Role> DeleteRoleAsync(int id)
         {
-           return _roleRepository.UpdateRole(id, role);
-        }
-
-        public void DeleteRole(int id)
-        {
-            _roleRepository.DeleteRole(id);
+          return await  _roleRepository.DeleteRoleAsync(id);
         }
 
     }

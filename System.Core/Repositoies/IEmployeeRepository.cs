@@ -13,11 +13,10 @@ namespace Solid.Core.Repositories
 
         Employee GetEmployeeById(int id);
 
-        Employee AddEmployee(Employee employee);
+        Task<Employee> AddEmployeeAsync(Employee employee);
 
-        Employee UpdaateEmployee(int id, Employee employee);
+        Task<Employee> UpdateEmployeeAsync(int id, Employee employee);
 
-        void DeleteEmployee(int id);    
-
+        Task<Employee> DeleteEmployeeAsync(int id);
     }
 }

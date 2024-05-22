@@ -72,3 +72,6 @@ C:\Users\USER\Downloads\EmployeeManagement\System.API\obj\Debug\net6.0\Solid.API
 C:\Users\USER\Downloads\EmployeeManagement\System.API\obj\Debug\net6.0\ref\Solid.API.dll
 C:\Users\USER\Downloads\EmployeeManagement\System.API\bin\Debug\net6.0\Solid.Service.dll
 C:\Users\USER\Downloads\EmployeeManagement\System.API\bin\Debug\net6.0\Solid.Service.pdb
+C:\Users\USER\Downloads\EmployeeManagement\System.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll

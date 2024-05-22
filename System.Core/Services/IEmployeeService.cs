@@ -13,10 +13,10 @@ namespace Solid.Core.Services
 
         Employee GetEmployeeById(int id);
 
-        Employee AddEmployee(Employee employee);
+        Task<Employee> AddEmployeeAsync(Employee employee);
 
-        Employee UpdaateEmployee(int id, Employee employee);
+        Task<Employee> UpdaateEmployeeAsync(int id, Employee employee);
 
-        void DeleteEmployee(int id);
+        Task<Employee> DeleteEmployeeAsync(int id);
     }
 }

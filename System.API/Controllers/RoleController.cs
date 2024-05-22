@@ -1,7 +1,11 @@
 ﻿using System.Data;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Solid.API.Models;
+using Solid.Core.DTOs;
 using Solid.Core.Entities;
 using Solid.Core.Services;
+using Solid.Service;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -15,55 +19,86 @@ namespace Solid.API.Controllers
 
         private readonly IRoleService _roleService;
 
-        public RoleController(IRoleService roleService)
+        private readonly IMapper _mapper;   
+
+        public RoleController(IRoleService roleService, IMapper mapper)
         {
             _roleService = roleService;
+            _mapper = mapper;
         }
 
         // GET: api/<RoleController>
         [HttpGet]
-        public IActionResult Get()
+        public ActionResult Get()
         {
-            return Ok(_roleService.GetRoles());
+            var allRole = _roleService.GetRoles();
+            
+            var roleDto = new List<RoleDTO>();
+
+            foreach (var r in allRole)
+
+                roleDto.Add(_mapper.Map<RoleDTO>(r));
+
+            return Ok(roleDto);
         }
 
         // GET api/<RoleController>/5
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public ActionResult Get(int id)
         {
-            var role =_roleService.GetRoleById(id);
-            if(role is null )
+            var role = _roleService.GetRoleById(id);
+
+            var roleDto = _mapper.Map<RoleDTO>(role);
+
+            if (role is null)
             {
-                return NotFound();  
+                return NotFound();
             }
             return Ok(role);
         }
 
         // POST api/<RoleController>
         [HttpPost]
-        public IActionResult Post([FromBody] Role role)
+        public async Task<ActionResult> Post([FromBody] RolePostModel role)
         {
-            if(role is null)
-            {
+            var roleToAdd = _mapper.Map<Role>(role);
+
+            var roleAdd = await _roleService.AddRoleAsync(roleToAdd);
+
+            var roleAddDto = _mapper.Map<RoleDTO>(roleAdd);
+
+            if (roleAddDto is null)
                 return NotFound();
-            }
-           return Ok(_roleService.AddRole(role));  
+            return Ok(roleAddDto);
         }
 
         // PUT api/<RoleController>/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] Role role)
+        public async Task<ActionResult> Put(int id, [FromBody] RolePostModel role)
         {
-            if(role is null )
+            var roleToUpdate = _roleService.GetRoleById(id);
+
+            if (roleToUpdate is null)
                 return NotFound();
-           return Ok(_roleService.UpdateRole(id, role));
+
+            _mapper.Map(role, roleToUpdate);
+
+            var roleUpdate = await _roleService.UpdateRoleAsync(id, roleToUpdate);
+
+            var roleUpdateDto = _mapper.Map<RoleDTO>(roleUpdate);
+
+            return Ok(roleUpdateDto);
         }
 
         // DELETE api/<RoleController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<ActionResult > Delete(int id)
         {
-            _roleService.DeleteRole(id);
+            var roleDelete = await _roleService.DeleteRoleAsync(id);
+            if (roleDelete is null)
+                return NotFound();
+
+            return Ok(roleDelete);
         }
     }
 }

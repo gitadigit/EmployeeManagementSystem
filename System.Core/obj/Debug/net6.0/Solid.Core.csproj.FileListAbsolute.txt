@@ -9,3 +9,4 @@ C:\Users\USER\Downloads\EmployeeManagement\System.Core\obj\Debug\net6.0\Solid.Co
 C:\Users\USER\Downloads\EmployeeManagement\System.Core\obj\Debug\net6.0\refint\Solid.Core.dll
 C:\Users\USER\Downloads\EmployeeManagement\System.Core\obj\Debug\net6.0\Solid.Core.pdb
 C:\Users\USER\Downloads\EmployeeManagement\System.Core\obj\Debug\net6.0\ref\Solid.Core.dll
+C:\Users\USER\Downloads\EmployeeManagement\System.Core\obj\Debug\net6.0\Solid.Core.csproj.AssemblyReference.cache

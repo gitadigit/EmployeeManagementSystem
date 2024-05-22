@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Solid.Core.Entities;
 using Solid.Core.Repositories;
 
@@ -28,13 +29,14 @@ namespace Solid.Data.Repositories
             return _context.RoleList.First(r => r.Id == id);
         }
 
-        public Role AddRole(Role role)
+        public async Task<Role> AddRoleAsync(Role role)
         {
             _context.RoleList.Add(role);
+           await _context.SaveChangesAsync();    
             return role;
         }
 
-        public Role UpdateRole(int id, Role role)
+        public async Task<Role> UpdateRoleAsync(int id, Role role)
         {
             var updataRole = _context.RoleList.ToList().Find(r => r.Id == id);
 
@@ -42,14 +44,20 @@ namespace Solid.Data.Repositories
             {
                 updataRole.RoleName = role.RoleName;
                 updataRole.DateEntryOffice = role.DateEntryOffice;
+               await  _context.SaveChangesAsync();
+                return updataRole;  
             }
 
             return null;
         }
 
-        public void DeleteRole(int id)
+        public async Task<Role> DeleteRoleAsync(int id)
         {
-            _context.RoleList.Remove(_context.RoleList.ToList().Find(r => r.Id == id));
+           var roleToDelete =  _context.RoleList.FirstOrDefault(r => r.Id == id);
+           
+           
+           await _context.SaveChangesAsync();
+            return roleToDelete;
         }
 
     }

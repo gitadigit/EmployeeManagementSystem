@@ -26,17 +26,17 @@ namespace Solid.Data.Repositories
 
         public Employee GetEmployeeById(int id)
         {
-            return _context.EmployeeList.Include(e => e.EmployeesRole).ToList().Find(e => e.Id == id);
+            return _context.EmployeeList.Include(e => e.EmployeesRole).ToList().First(e => e.Id == id);
         }
 
-        public Employee AddEmployee(Employee employee)
+        public async Task<Employee> AddEmployeeAsync(Employee employee)
         {
             _context.EmployeeList.Add(employee);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return employee;
         }
 
-        public Employee UpdaateEmployee(int id, Employee employee)
+        public async Task<Employee> UpdateEmployeeAsync(int id, Employee employee)
         {
             var updataEmployee = _context.EmployeeList.First(e => e.Id == id);
             if (updataEmployee != null)
@@ -48,16 +48,21 @@ namespace Solid.Data.Repositories
                 updataEmployee.BirthDate = employee.BirthDate;
                 updataEmployee.Gender = employee.Gender;
                 updataEmployee.IsActive = employee.IsActive;
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
                 return updataEmployee;
             }
             return null;
         }
 
-        public void DeleteEmployee(int id)
+        public async Task<Employee> DeleteEmployeeAsync(int id)
         {
-            _context.EmployeeList.Remove(_context.EmployeeList.ToList().Find(e => e.Id == id));
-            _context.SaveChanges();
+            var employeToDelete = _context.EmployeeList.FirstOrDefault(e => e.Id == id);
+
+            if (employeToDelete != null)
+                employeToDelete.IsActive= false;    
+
+            await _context.SaveChangesAsync();
+            return employeToDelete;
         }
 
     }

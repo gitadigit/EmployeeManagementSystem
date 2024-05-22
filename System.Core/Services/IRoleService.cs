@@ -13,11 +13,11 @@ namespace Solid.Core.Services
 
         Role GetRoleById(int id);
 
-        Role AddRole(Role role);
+        Task<Role> AddRoleAsync(Role role);
 
-        Role UpdateRole(int id, Role role);
+        Task<Role> UpdateRoleAsync(int id, Role role);
 
-        void DeleteRole(int id);
+        Task<Role> DeleteRoleAsync(int id);
 
     }
 }
